@@ -96,28 +96,6 @@
     }
   </style>
 </head>
-// Carousel functionality
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-item');
-const totalSlides = slides.length;
-const slideWidth = slides[0].clientWidth;
-
-function updateCarousel() {
-    const carouselSlide = document.querySelector('.carousel-slide');
-    carouselSlide.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-}
-
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateCarousel();
-}
-
-// Auto slide every 3 seconds
-setInterval(nextSlide, 1000);
-
-// Initialize
-updateCarousel();
-</script>
 <body>
   <div class="card">
     <h1>Happy Birthday, Boo 🖤❤️</h1>
